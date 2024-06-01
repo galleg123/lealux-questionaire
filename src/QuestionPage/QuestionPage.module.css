@@ -2,12 +2,12 @@
 
 .logo {
   box-sizing: border-box;
-  width: 200.78px;
-  height: 33.785px;
+  width: 204.29px;
+  height: 34.38px;
   flex-shrink: 0;
   position: fixed;
-  top: 75px;
-  left: 309.49px;
+  top: 36px;
+  left: 308px;
   margin: 0;
 }
 
@@ -30,26 +30,26 @@
 .questionNumber {
   box-sizing: border-box;
   position: fixed;
-  top: 283.99px;
-  left: 200.41px;
+  top: 191.14px;
+  left: 190.98px;
   color: #6b93ab;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 53.219px;
+  font-size: 54.15px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 69.185px */
   margin: 0;
-  width: 419px;
-  height: 69px;
+  width: 426px;
+  height: 70px;
 }
 
 .seperaterBar {
   box-sizing: border-box;
   position: fixed;
-  top: 377.14px;
-  left: 199.45px;
-  width: 421.349px;
-  height: 6.274px;
+  top: 285.92px;
+  left: 190px;
+  width: 428.72px;
+  height: 6.38px;
   background: #6b93ab;
   margin: 0;
 }
@@ -57,18 +57,37 @@
 .questionDescription {
   box-sizing: border-box;
   position: fixed;
-  top: 434.57px;
-  left: 211.03px;
-  width: 397.7px;
-  height: 82px;
   color: #6b93ab;
   text-align: center;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 31.372px;
+  font-size: 31.921px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 40.784px */
   margin: 0;
+  height: 82px;
+  top: 315px;
+}
+.questionOne {
+  left: 201.79px;
+  width: 404.66px;
+}
+.questionTwo {
+  left: 201.79px;
+  width: 404.66px;
+}
+.questionThree {
+  width: 286px;
+  left: 256px;
+}
+.questionFour {
+  width: 388px;
+  left: 215px;
+}
+.questionFive {
+  width: 455.24px;
+
+  left: 182px;
 }
 
 .optionBox {
@@ -77,8 +96,8 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 423.763px;
-  height: 69.501px;
+  width: 431.18px;
+  height: 70.72px;
   flex-shrink: 0;
   border-radius: 16.893px;
   background: #6c93ab;
@@ -89,26 +108,44 @@
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 34.509px */
-  left: 198px;
+  left: 194px;
   margin: 0;
 }
 
 .optionOne {
-  top: 587.57px;
+  top: 455.84px;
 }
 .optionTwo {
-  top: 689.1px;
+  top: 556.02px;
 }
 .optionThree {
-  top: 808.62px;
+  top: 656.2px;
+}
+.optionFour {
+  top: 756.38px;
+}
+.optionFive {
+  top: 856.56px;
 }
 
 .logoSVG {
   box-sizing: border-box;
   position: fixed;
-  bottom: 65px;
-  left: 381.89px;
+  top: 1011.03px;
+  left: 381px;
+  width: 58px;
+  height: 58px;
   margin: 0;
+  z-index: 9999;
+  transition: all 0.8s ease;
+}
+.logoSVG.enlarged {
+  position: fixed;
+  left: -1619px;
+  top: -1600px;
+  width: 4000px;
+  height: 4000px;
+  z-index: 9999;
 }
 
 .endContainer {
@@ -128,12 +165,12 @@
 }
 .endLogo {
   box-sizing: border-box;
-  width: 200.78px;
-  height: 33.785px;
+  width: 204.29px;
+  height: 34.38px;
   flex-shrink: 0;
   position: fixed;
-  top: 75px;
-  left: 309.49px;
+  top: 36px;
+  left: 308px;
   margin: 0;
 }
 .endTitle {
@@ -169,8 +206,22 @@
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 43.89px */
-
   position: fixed;
   top: 638.57px;
   left: 222px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.endAnimation {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0s;
 }
